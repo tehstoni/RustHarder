@@ -1,0 +1,9 @@
+[package]
+name = "RustHarder"
+version = "0.1.0"
+edition = "2018"
+
+# Specify the necessary dependencies
+[dependencies]
+reqwest = { version = "0.12.8", features = ["blocking", "json"] }
+winapi = { version = "0.3", features = ["winbase", "synchapi", "processthreadsapi", "libloaderapi", "minwinbase", "errhandlingapi", "sysinfoapi", "ntdef"] }
